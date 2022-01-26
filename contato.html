@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="barbearia, alura, html5, css, aprendizado">
+        <meta name="author" content="Matheus da Silva">
+        <title>Contato - Barbearia Alura</title>    
+        <link href="./img/logo.png" rel="shortcut icon" type="image/x-icon">
+        <link href="./css/styles.css" rel="stylesheet">
+        <link href="./icomoon/style.css" rel="stylesheet">
+    </head>
+<body>
+    <header class="home-header">
+        <div class="logotipo">
+            <img class="logo-barbearia-alura" src="./img/logo.png" alt="logo da barbearia">
+        </div>
+        <div class="menu">            
+                <a href="index.html">home</a>
+                <a href="produtos.html">produtos</a>
+                <a href="contato.html">contato</a>            
+        </div>        
+    </header>
+    <main class="main-contato">
+        <section class="contato">
+            <div class="formulario-de-contato">
+                <h1>Preencha o formulário e nós entraremos em contato!</h1>
+                <form>
+                    <label for="nome">Nome</label>
+                    <input type="text" class="input" id="nome" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" class="input" id="email" required>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" class="input" id="telefone" required>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea rows="5" id="mensagem"></textarea>
+                    <div class="preferencia-contato">
+                        <h2>Como você prefere que façamos contato?</h2>
+                        <input type="radio" id="preferencia-contato" name="forma-contato" value="E-mail">E-mail
+                        <input type="radio" id="preferencia-contato" name="forma-contato" value="WhatsApp">WhatsApp
+                    </div>
+                    <div class="horario-contato">
+                        <h2>Qual o melhor período para contato?</h2>
+                        <select>
+                            <option value="manha">Manhã</option>
+                            <option value="tarde">Tarde</option>
+                            <option value="noite">Noite</option>
+                            <option value="indiferente">Indiferente</option>
+                        </select>
+                    </div>
+                    <input type="submit" class="btn btn-submit" title="enviar">
+                </form>
+            </div>
+            
+        </section>
+        <section class="contato-whatsapp">
+            <h1>Reserve seu horário agora mesmo pelo WhatsApp</h1>
+            <a href="https://api.whatsapp.com/send?phone=5547999291731" target="_blank"><span class="icon-whatsapp"></span></a>
+            <p>Clique no ícone do whatsapp para iniciar a conversa*</p>
+        </section>        
+    </main>
+    <footer>
+        <p>2021 -  all rights reserveds.</p>
+    </footer> 
+</body>
+</html>
